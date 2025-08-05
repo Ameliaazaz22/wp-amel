@@ -28,7 +28,7 @@ export function PrintButton({
       }
 
       #report-logo {
-        max-width: 150px;
+        max-width: 170px;
         height: auto;
       }
 
@@ -41,7 +41,7 @@ export function PrintButton({
       /* Table column headers alternating red and white backgrounds */
       table thead th:nth-child(odd),
       table th:nth-child(odd) {
-        background-color: red !important;
+        background-color: dark red !important;
         color: white !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
@@ -49,7 +49,7 @@ export function PrintButton({
 
       table thead th:nth-child(even),
       table th:nth-child(even) {
-        background-color: red !important;
+        background-color: dark red !important;
         color: white !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;

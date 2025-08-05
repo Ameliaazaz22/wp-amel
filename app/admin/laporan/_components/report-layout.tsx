@@ -102,14 +102,14 @@ export function ReportLayout({
             <div className="">
               <p className="mb-2">
                 Jakarta,{" "}
-                {new Date().toLocaleDateString("id-ID", {
+                {new Date().toLocaleDateString("id-ID", {    
                   day: "numeric",
                   month: "long",
                   year: "numeric",
                 })}
               </p>
-              <p className="mb-16">Pemilik Toko</p>
-              <p className="inline-block min-w-[200px] pb-1">Lukmanul Hakim</p>
+              <p className="mb-20">Pemilik Toko</p>
+              <p className="inline-block min-w-[200px] pb1">Lukmanul Hakim</p>
             </div>
           </div>
         </div>
