@@ -47,7 +47,7 @@ export default function DataKriteriaPage() {
     kode: "",
     nama: "",
     bobot: "",
-    jenis: "" as "benefit" | "cost" | "",
+    jenis: "" as "Benefit" | "Cost" | "",
   });
 
   useEffect(() => {
@@ -227,7 +227,7 @@ export default function DataKriteriaPage() {
           id="add-jenis"
           value={formData.jenis}
           onChange={(value) =>
-            setFormData({ ...formData, jenis: value as "benefit" | "cost" })
+            setFormData({ ...formData, jenis: value as "Benefit" | "Cost" })
           }
           placeholder="--Pilih Atribut Kriteria--"
           options={jenisOptions}
@@ -283,12 +283,12 @@ export default function DataKriteriaPage() {
                       <TableCell className="text-center">
                         <span
                           className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                            item.jenis === "benefit"
+                            item.jenis === "Benefit"
                               ? "bg-green-100 text-green-800"
                               : "bg-red-100 text-red-800"
                           }`}
                         >
-                          {item.jenis === "benefit" ? "Benefit" : "Cost"}
+                          {item.jenis === "Benefit" ? "Benefit" : "Cost"}
                         </span>
                       </TableCell>
                       <TableCell>
@@ -352,7 +352,7 @@ export default function DataKriteriaPage() {
               id="edit-jenis"
               value={formData.jenis}
               onChange={(value) =>
-                setFormData({ ...formData, jenis: value as "benefit" | "cost" })
+                setFormData({ ...formData, jenis: value as "Benefit" | "Cost" })
               }
               placeholder="--Pilih Atribut Kriteria--"
               options={jenisOptions}
