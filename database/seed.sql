@@ -27,11 +27,11 @@ ON DUPLICATE KEY UPDATE
 -- KRITERIA DATA (Evaluation Criteria)
 -- ========================================
 INSERT INTO kriteria (kode, nama, bobot, jenis) VALUES
-('C1', 'Kualitas Pigmen', '5', 'Benefit'),
-('C2', 'Harga', '4', 'Cost'),
-('C3', 'Ketahanan', '5', 'Benefit'),
-('C4', 'Daya Sebar', '3', 'Benefit'),
-('C5', 'Waktu Pengeringan', '3', 'Benefit')
+('C1', 'Kualitas Pigmen', '5', 'benefit'),
+('C2', 'Harga', '4', 'cost'),
+('C3', 'Ketahanan', '5', 'benefit'),
+('C4', 'Daya Sebar', '3', 'benefit'),
+('C5', 'Waktu Pengeringan', '3', 'benefit')
 ON DUPLICATE KEY UPDATE 
     nama = VALUES(nama),
     bobot = VALUES(bobot),

@@ -24,7 +24,7 @@ export const kriteria = mysqlTable("kriteria", {
   kode: varchar("kode", { length: 10 }).notNull().unique(),
   nama: varchar("nama", { length: 255 }).notNull(),
   bobot: decimal("bobot", { precision: 5, scale: 2 }).notNull(),
-  jenis: mysqlEnum("jenis", ["Benefit", "Cost"]).notNull().default("Benefit"),
+  jenis: mysqlEnum("jenis", ["benefit", "cost"]).notNull().default("benefit"),
   created_at: timestamp("created_at").defaultNow(),
   updated_at: timestamp("updated_at").defaultNow().onUpdateNow(),
 });

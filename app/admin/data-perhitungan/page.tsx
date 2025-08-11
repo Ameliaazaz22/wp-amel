@@ -154,7 +154,7 @@ export default function DataHasilNilaiPage() {
                       return (
                         <TableHead className="text-center" key={kode}>
                           {kode} (
-                          {k?.jenis_kriteria === "Benefit" ? "Benefit" : "Cost"}
+                          {k?.jenis_kriteria === "benefit" ? "benefit" : "cost"}
                           )
                         </TableHead>
                       );
